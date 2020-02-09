@@ -20,6 +20,7 @@ namespace esercizio2ricerca
             {
                 numeri[i] = random.Next(1, 100);
 
+
             }
         }
     }

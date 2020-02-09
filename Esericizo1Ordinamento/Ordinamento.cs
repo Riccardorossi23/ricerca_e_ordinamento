@@ -19,6 +19,7 @@ namespace Esericizo1Ordinamento
                 Console.WriteLine($"{numeri[i]}");
             }
             Console.ReadLine();
+
         }
     }
 }

@@ -15,6 +15,7 @@ namespace ricerca_e_ordinamento
             Random rnd = new Random();
             for (int i = 0; i < numeri.Length; i++)
             {
+
                 numeri[i] = rnd.Next(1, 100);
                 int cont = 0;
                 for (int j = 0; j < numeri.Length; j++)
