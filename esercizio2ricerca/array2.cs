@@ -11,9 +11,9 @@ namespace esercizio2ricerca
         static void Main(string[] args)
         {
 
-            int n = numeri.Length;
+
             bool swapped;
-            const int tanti = 50;
+            const int tanti = 10;
             int[] numeri = new int[tanti];
             Random random = new Random();
 
@@ -21,21 +21,28 @@ namespace esercizio2ricerca
             {
                 numeri[i] = random.Next(1, 100);
                 swapped = false;
-                for (int j = 1; j < (n - i); j++)
+                for (int j = 1; j < (10 - i); j++)
+                {
                     if (numeri[j - 1] > numeri[j])
                     {
                         int temp = numeri[j - 1];
                         numeri[j - 1] = numeri[j];
                         numeri[j] = temp;
                         swapped = true;
+                        Console.WriteLine($"{temp}");
                     }
-                    if (!swapped)
-                    break;
-                Console.WriteLine($"{swapped}");
-
                 }
+                if (!swapped)
+                    break;
+             
+
+
             }
+            Console.ReadLine();
+        }
     }
 }
+    
+
            
              

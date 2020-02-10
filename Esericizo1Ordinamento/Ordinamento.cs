@@ -15,8 +15,8 @@ namespace Esericizo1Ordinamento
             Random rnd = new Random();
             for (int i = 0; i < numeri.Length - 1; i++)
             {
-                numeri[i] = rnd.Next(0, 999);
-                Console.WriteLine($"{numeri[i]}");
+               
+
 
             }
             Console.ReadLine();

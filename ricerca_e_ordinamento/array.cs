@@ -26,6 +26,7 @@ namespace ricerca_e_ordinamento
                     }
                 }
                 Console.WriteLine($"{numeri[i]} si ripete {cont} volte");
+
             }
             Console.ReadLine();
         }
