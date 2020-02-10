@@ -12,32 +12,26 @@ namespace esercizio2ricerca
         {
 
 
-            bool swapped;
-            const int tanti = 10;
-            int[] numeri = new int[tanti];
-            Random random = new Random();
 
-            for (int i = 0; i < numeri.Length; i++)
+
+            List<string> numeri = new List<string>();
+            Random random = new Random();
+            
+            for (int i = 0; i < numeri.Count; i++)
             {
-                numeri[i] = random.Next(1, 100);
-                swapped = false;
-                for (int j = 1; j < (10 - i); j++)
+
+                int n = random.Next(0,100);
+                numeri.Add(n);
+                foreach ( numeri in n)
                 {
-                    if (numeri[j - 1] > numeri[j])
-                    {
-                        int temp = numeri[j - 1];
-                        numeri[j - 1] = numeri[j];
-                        numeri[j] = temp;
-                        swapped = true;
-                        Console.WriteLine($"{temp}");
-                    }
+                    Console.WriteLine(n);
                 }
-                if (!swapped)
-                    break;
-             
 
 
             }
+            numeri.Sort();
+            Console.WriteLine($"{numeri}");
+
             Console.ReadLine();
         }
     }
