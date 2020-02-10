@@ -10,27 +10,27 @@ namespace esercizio2ricerca
     {
         static void Main(string[] args)
         {
-
-
-
-
-            List<string> numeri = new List<string>();
-            Random random = new Random();
-            
-            for (int i = 0; i < numeri.Count; i++)
+            int x,y;
+            int temp;
+            const int tanti = 10;
+            int [] numeri = new int[tanti];
+            Random rnd = new Random();
+            for (x=0;x<tanti-1;x++)
             {
-
-                int n = random.Next(0,100);
-                numeri.Add(n);
-                foreach ( numeri in n)
+                for (y = 0; y < tanti - 1; y++)
                 {
-                    Console.WriteLine(n);
+                    numeri[y+1] = rnd.Next(1, 100);
+                    if (numeri[y]>numeri[y+1])
+                    {
+                        
+                        temp = numeri[y];
+                        numeri[y] = numeri[y + 1];
+                        numeri[y + 1] = temp;
+                        Console.WriteLine($"{temp}");
+
+                    }
                 }
-
-
             }
-            numeri.Sort();
-            Console.WriteLine($"{numeri}");
 
             Console.ReadLine();
         }

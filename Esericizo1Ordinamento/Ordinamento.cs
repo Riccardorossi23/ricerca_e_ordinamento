@@ -10,7 +10,6 @@ namespace Esericizo1Ordinamento
     {
         static void Main(string[] args)
         {
-
             int[] numeri = new int[30];
             Random rnd = new Random();
             for (int i = 0; i < numeri.Length - 1; i++)
