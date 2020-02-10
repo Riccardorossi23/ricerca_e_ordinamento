@@ -17,6 +17,7 @@ namespace Esericizo1Ordinamento
             {
                 numeri[i] = rnd.Next(0, 999);
                 Console.WriteLine($"{numeri[i]}");
+
             }
             Console.ReadLine();
 

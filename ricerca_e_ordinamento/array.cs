@@ -10,9 +10,9 @@ namespace ricerca_e_ordinamento
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
             const int tanti = 100;
             double[] numeri = new double[tanti];
-            Random rnd = new Random();
             for (int i = 0; i < numeri.Length; i++)
             {
 
@@ -25,7 +25,7 @@ namespace ricerca_e_ordinamento
                         cont = cont + 1;
                     }
                 }
-                Console.WriteLine(numeri[i]+ " quante volte si ripete? " + "si ripete  "  +  cont +  " volte");
+                Console.WriteLine($"{numeri[i]} si ripete {cont} volte");
             }
             Console.ReadLine();
         }
